@@ -1,8 +1,11 @@
-$(document).ready(function(){
-// all jQuery method
+
+
+
+
+ // all jQuery method
 //$().click(function(){
   //$("div").animate({left: '150px'});
-});
+
 
 // paragraph.innerHTML = "people can see this";
 // var videoBanner = document.getElementsById('videoBanner');
@@ -18,7 +21,34 @@ $(document).ready(function(){
 // videoBanner.removeChild('paragraph');
 // videoBanner.removeChild("newHeader");
 
-// videoBanner.addEventListener('click', myEventHandler)
-// function myEventHandler() {
-// 	alert( "hi how are you")
+var button = document.getElementById("button");
+button.addEventListener('click', myFunction);
 
+function myFunction() {
+  var x = document.getElementById("hideMe");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+<style>
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+* Green *
+.success {
+  color: green;
+}
+
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
+}
