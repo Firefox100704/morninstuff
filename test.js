@@ -26,29 +26,19 @@ button.addEventListener('click', myFunction);
 
 function myFunction() {
   var x = document.getElementById("hideMe");
+
   if (x.style.display === "none") {
     x.style.display = "block";
+
   } else {
     x.style.display = "none";
   }
 }
+var y = document.getElementById("hobby");
 
-<style>
-.btn {
-  border: none;
-  background-color: inherit;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  display: inline-block;
+if (y.style.display === "none") {
+	
 }
 
-* Green *
-.success {
-  color: green;
-}
 
-.success:hover {
-  background-color: #4CAF50;
-  color: white;
-}
+
