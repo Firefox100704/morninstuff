@@ -34,10 +34,11 @@ function myFunction() {
     x.style.display = "none";
   }
 }
-var y = document.getElementById("hobby");
-
+var y = document.getElementsById("hobby")
 if (y.style.display === "none") {
-	
+	y.style.display = "none";
+} else {
+	y.style.display = "block";
 }
 
 
